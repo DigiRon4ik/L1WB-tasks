@@ -41,3 +41,12 @@ func main() {
 		fmt.Println(sqr)
 	}
 }
+
+/*
+ - Output: -
+4
+16
+36
+64
+100
+*/
