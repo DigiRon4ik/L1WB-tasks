@@ -87,7 +87,7 @@ func worker(id int, dataChannel <-chan int, stopChannel <-chan struct{}, wg *syn
 }
 
 // Producer goroutine that generates data and sends it to the dataChannel.
-func producer(dataChannel chan int, stopChannel chan struct{}) {
+func producer(dataChannel chan<- int, stopChannel <-chan struct{}) {
 	i := 0 // Initialize the counter for generated data.
 	// Infinity cycle.
 	for {
@@ -104,6 +104,17 @@ func producer(dataChannel chan int, stopChannel chan struct{}) {
 		}
 	}
 }
+
+/*
+ - Rationale for the method of completing all wokers: -
+struct{} is an empty structure in Go.
+It occupies no memory (its size is zero), which makes it an ideal choice if you only need to
+pass the fact of a “signal”, without any data.
+
+Closing a channel sends a signal to all subscribers (goroutines) who read from it.
+A closed channel does not block readers, so each goroutine will know that it is time to terminate.
+Idiomaticity.
+*/
 
 /*
  - Input : -
