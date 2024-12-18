@@ -61,3 +61,8 @@ func main() {
 	// Print the final sum of squares
 	fmt.Println(sqrSum)
 }
+
+/*
+ - Output: -
+220
+*/
