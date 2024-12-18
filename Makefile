@@ -8,11 +8,11 @@ l2:
 l3:
 	@go run L1.3/main.go
 l4:
-	@go run L1.4/main.go
+	@go run L1.4/main.go 4
 l5:
 	@go run L1.5/main.go
-l6:
-	@go run L1.6/main.go
+l6: l6-4
+	@go run L1.6/Solution-5/main.go
 l7:
 	@go run L1.7/main.go
 l8:
@@ -56,3 +56,12 @@ l26:
 
 run:
 	echo "Run one of the tasks. Example: make l1"
+
+l6-1:
+	@go run L1.6/Solution-1/main.go
+l6-2: l6-1
+	@go run L1.6/Solution-2/main.go
+l6-3: l6-2
+	@go run L1.6/Solution-3/main.go
+l6-4: l6-3
+	@go run L1.6/Solution-4/main.go
