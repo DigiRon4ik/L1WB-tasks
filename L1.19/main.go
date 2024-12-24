@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-// reverseString принимает строку и возвращает перевёрнутую версию
+// reverseString takes a string and returns a reversed version.
 func reverseString(input string) string {
 	// Convert the string to a slice of runes for correct Unicode handling.
 	runes := []rune(input)
