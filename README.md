@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">L1WB-tasks</h1>
 
-<h3 align="center">26 easy quizzes, for the «L1» module in the <a href="https://tech.wildberries.ru/courses/golang/application">«Gorutin Golang»</a> course at <a href="https://tech.wildberries.ru/">«TechSchool»</a> by <a href="https://www.wildberries.ru/">«Wildberries»</a></h3>
+<h3 align="center">26 easy quizzes, for the «L1» module in the <a href="https://tech.wildberries.ru/gorutinovyy-golang">«Gorutin Golang»</a> course at <a href="https://tech.wildberries.ru/">«TechSchool»</a> by <a href="https://www.wildberries.ru/">«Wildberries»</a></h3>
 <p align="center">Just tasks, I don't know what to say.</p>
 
 
